@@ -1,0 +1,49 @@
+@mixin font($family, $weight: normal, $size: inherit, $lineHeight: 1) {
+  font-weight: $weight;
+  font-size: pxtorem($size);
+  font-family: $family;
+  line-height: pxtorem($lineHeight);
+}
+
+@mixin h1 {
+  @include font($f-family, $f-weight-bold, 60, 65);
+
+  @include mq(large) {
+    font-size: pxtorem(35);
+    line-height: pxtorem(45);
+  }
+
+  @include mq(small) {
+    font-size: pxtorem(25);
+    line-height: pxtorem(30);
+  }
+}
+
+@mixin h2 {
+  @include font($f-family, $f-weight-bold, 50, 60);
+
+  @include mq(large) {
+    font-size: pxtorem(32);
+    line-height: pxtorem(42);
+  }
+
+  @include mq(small) {
+    font-size: pxtorem(30);
+    line-height: pxtorem(35);
+    letter-spacing: inherit;
+  }
+}
+
+@mixin h3 {
+  @include font($f-family, $f-weight-bold, 40, 45);
+
+  @include mq(large) {
+    font-size: pxtorem(30);
+    line-height: pxtorem(35);
+  }
+
+  @include mq(small) {
+    font-size: pxtorem(24);
+    line-height: pxtorem(25);
+  }
+}

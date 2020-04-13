@@ -1,0 +1,50 @@
+@mixin fontFace($family, $src, $style: normal, $weight: normal) {
+  @font-face {
+    font-weight: $weight;
+    font-family: $family;
+    font-style: $style;
+    src: url('#{$src}.woff') format('woff'),
+      url('#{$src}.woff2') format('woff2');
+    font-display: block;
+  }
+}
+
+/* dosis-300 - latin */
+@include fontFace(
+  $f-family-dosis,
+  '#{$path-font}dosis-v17-latin-300',
+  normal,
+  300
+);
+
+/* dosis-regular - latin */
+@include fontFace(
+  $f-family-dosis,
+  '#{$path-font}dosis-v17-latin-regular',
+  normal,
+  400
+);
+
+/* dosis-500 - latin */
+@include fontFace(
+  $f-family-dosis,
+  '#{$path-font}dosis-v17-latin-500',
+  normal,
+  500
+);
+
+/* dosis-600 - latin */
+@include fontFace(
+  $f-family-dosis,
+  '#{$path-font}dosis-v17-latin-600',
+  normal,
+  600
+);
+
+/* dosis-700 - latin */
+@include fontFace(
+  $f-family-dosis,
+  '#{$path-font}dosis-v17-latin-700',
+  normal,
+  700
+);

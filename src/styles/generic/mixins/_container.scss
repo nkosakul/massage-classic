@@ -1,0 +1,26 @@
+@mixin module-space {
+  margin-top: 50px;
+
+  @include mq(small) {
+    margin-top: 30px;
+  }
+}
+
+@mixin container-medium {
+  width: 100%;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 90px;
+  padding-left: 90px;
+
+  @include mq(xlarge) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @include mq(small) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

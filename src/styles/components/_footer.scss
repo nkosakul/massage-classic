@@ -1,0 +1,6 @@
+.footer {
+  @include container-medium;
+
+  padding-top: $space-half;
+  padding-bottom: $space-half;
+}

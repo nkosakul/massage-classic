@@ -1,0 +1,8 @@
+.header {
+  @include container-medium;
+
+  padding-top: $space-half;
+  padding-bottom: $space-half;
+  display: flex;
+  justify-content: space-between;
+}
